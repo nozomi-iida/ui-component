@@ -1,8 +1,14 @@
-import React from 'react'
-import { Button as StoryComponent } from '.'
+import React from "react";
+import { Button as StoryComponent } from ".";
 
 export default {
-  title: "Components"
+  title: "Components",
 };
 
-export const Button = () => <div><StoryComponent /></div>;
+export function Button() {
+  return (
+    <div>
+      <StoryComponent>Hoge</StoryComponent>
+    </div>
+  );
+}

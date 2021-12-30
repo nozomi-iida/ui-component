@@ -42,7 +42,7 @@ export const {{ inputs.value }} = () => <div><StoryComponent /></div>;
 
 ```
 
-# `{{ inputs.value }}/{{ inputs.value }}.test.tsx`
+# `{{ inputs.value }}/{{ inputs.value }}.test.ts`
 
 ```tsx
 import React from 'react'
