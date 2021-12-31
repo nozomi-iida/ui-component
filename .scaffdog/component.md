@@ -10,7 +10,7 @@ questions:
 # `{{ inputs.value }}/index.tsx`
 
 ```tsx
-import React from 'react'
+import React from "react"
 import { {{ inputs.value }}Props } from "./{{ inputs.value }}.types";
 import styles from "./style.module.scss"
 
@@ -31,8 +31,9 @@ export type {{ inputs.value }}Props = {
 # `{{ inputs.value }}/{{ inputs.value }}.stories.tsx`
 
 ```tsx
-import React from 'react'
-import { {{ inputs.value }} as StoryComponent } from '.'
+import React from "react"
+import { {{ inputs.value }} as StoryComponent } from "."
+import "@storybook/addon-console";
 
 export default {
   title: "Components"
@@ -45,11 +46,11 @@ export const {{ inputs.value }} = () => <div><StoryComponent /></div>;
 # `{{ inputs.value }}/{{ inputs.value }}.test.ts`
 
 ```tsx
-import React from 'react'
+import React from "react"
 import { render } from "@testing-library/react";
 
-import { {{ inputs.value }} } from '.'
-import { {{ inputs.value }}Props } from './{{ inputs.value }}.types'
+import { {{ inputs.value }} } from "."
+import { {{ inputs.value }}Props } from "./{{ inputs.value }}.types"
 
 describe("{{ inputs.value }} Component", () => {
   let props: {{ inputs.value }}Props;

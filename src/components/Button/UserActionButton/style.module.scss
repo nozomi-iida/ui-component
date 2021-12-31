@@ -1,0 +1,27 @@
+@import "src/styles/themes";
+
+.userActionButton {
+  border-radius: var(--radius-xs);
+  color: var(--white-color);
+
+  &[data-color="normal"] {
+    background-color: var(--black-color);
+  }
+
+  &[data-color="primary"] {
+    background-color: var(--primary-color);
+  }
+
+  &[data-color="secondary"] {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+
+    path {
+      fill: var(--dark-color);
+    }
+  }
+
+  &[data-color="danger"] {
+    background-color: var(--danger-color);
+  }
+}
