@@ -33,8 +33,9 @@
         "react/function-component-definition": ["off"],
         "react/button-has-type": ["off"],
         "import/no-extraneous-dependencies": ["error", {
-            "devDependencies": ["**/*.test.tsx"]
+            "devDependencies": ["**/*.test.tsx", "**/*.stories.tsx"]
         }],
+        "arrow-body-style": ["off"],
         "quotes": ["error", "double"]
     }
 }

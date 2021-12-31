@@ -1,0 +1,60 @@
+@import "src/styles/themes";
+
+.button {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  white-space: nowrap;
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      filter: brightness(1);
+    }
+  }
+
+  svg {
+    margin-right: var(--space-xxs);
+    position: relative;
+    top: -1px;
+  }
+
+  &.iconOnly {
+    svg {
+      margin-right: 0;
+    }
+  }
+
+  &[data-align="right"] {
+    margin-left: auto;
+  }
+
+  &[data-align="center"] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &[data-size="sm"] {
+    padding: 5px var(--space-sm);
+  }
+
+  &[data-size="md"] {
+    padding: 9px var(--space-sm);
+  }
+
+  &[data-size="lg"] {
+    font-size: 14px;
+    line-height: 16px;
+    padding: var(--space-sm) var(--space-md);
+  }
+}

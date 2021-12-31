@@ -1,3 +1,8 @@
-@import "reset";
-@import "color";
-@import "space";
+@import "modules/reset";
+@import "modules/color";
+@import "modules/space";
+@import "modules/size";
+
+.block {
+  display: block;
+}
